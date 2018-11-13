@@ -7,21 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04C3B164218EE01C0035DCD5 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C3B163218EE01C0035DCD5 /* SideMenuViewController.swift */; };
+		04C3B167218EE0910035DCD5 /* SideMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C3B166218EE0910035DCD5 /* SideMenuCell.swift */; };
 		04D19EBE218A219000CF354D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D19EBD218A219000CF354D /* AppDelegate.swift */; };
-		04D19EC0218A219000CF354D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D19EBF218A219000CF354D /* ViewController.swift */; };
 		04D19EC3218A219000CF354D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04D19EC1218A219000CF354D /* Main.storyboard */; };
 		04D19EC5218A219200CF354D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04D19EC4218A219200CF354D /* Assets.xcassets */; };
 		04D19EC8218A219200CF354D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04D19EC6218A219200CF354D /* LaunchScreen.storyboard */; };
+		04D19ED3218A25B200CF354D /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D19ED2218A25B200CF354D /* SWRevealViewController.m */; };
+		04D19ED9218A300600CF354D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D19ED8218A300600CF354D /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04C3B163218EE01C0035DCD5 /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
+		04C3B166218EE0910035DCD5 /* SideMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuCell.swift; sourceTree = "<group>"; };
 		04D19EBA218A219000CF354D /* MyFirstAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFirstAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04D19EBD218A219000CF354D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		04D19EBF218A219000CF354D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		04D19EC2218A219000CF354D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04D19EC4218A219200CF354D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04D19EC7218A219200CF354D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04D19EC9218A219300CF354D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04D19ED0218A25B100CF354D /* MyFirstAPP-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyFirstAPP-Bridging-Header.h"; sourceTree = "<group>"; };
+		04D19ED1218A25B200CF354D /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		04D19ED2218A25B200CF354D /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		04D19ED8218A300600CF354D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +43,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04C3B161218EDD780035DCD5 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				04D19EBD218A219000CF354D /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		04C3B162218EDDD00035DCD5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				04C3B168218EE1260035DCD5 /* HomeView */,
+				04C3B165218EE06E0035DCD5 /* SideMenu */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		04C3B165218EE06E0035DCD5 /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				04C3B163218EE01C0035DCD5 /* SideMenuViewController.swift */,
+				04C3B166218EE0910035DCD5 /* SideMenuCell.swift */,
+			);
+			path = SideMenu;
+			sourceTree = "<group>";
+		};
+		04C3B168218EE1260035DCD5 /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				04D19ED8218A300600CF354D /* HomeViewController.swift */,
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
 		04D19EB1218A219000CF354D = {
 			isa = PBXGroup;
 			children = (
@@ -54,14 +96,25 @@
 		04D19EBC218A219000CF354D /* MyFirstAPP */ = {
 			isa = PBXGroup;
 			children = (
-				04D19EBD218A219000CF354D /* AppDelegate.swift */,
-				04D19EBF218A219000CF354D /* ViewController.swift */,
+				04C3B162218EDDD00035DCD5 /* ViewControllers */,
+				04C3B161218EDD780035DCD5 /* AppDelegate */,
+				04D19ECF218A257A00CF354D /* SWReveal */,
 				04D19EC1218A219000CF354D /* Main.storyboard */,
 				04D19EC4218A219200CF354D /* Assets.xcassets */,
 				04D19EC6218A219200CF354D /* LaunchScreen.storyboard */,
 				04D19EC9218A219300CF354D /* Info.plist */,
 			);
 			path = MyFirstAPP;
+			sourceTree = "<group>";
+		};
+		04D19ECF218A257A00CF354D /* SWReveal */ = {
+			isa = PBXGroup;
+			children = (
+				04D19ED1218A25B200CF354D /* SWRevealViewController.h */,
+				04D19ED2218A25B200CF354D /* SWRevealViewController.m */,
+				04D19ED0218A25B100CF354D /* MyFirstAPP-Bridging-Header.h */,
+			);
+			path = SWReveal;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +149,7 @@
 				TargetAttributes = {
 					04D19EB9218A219000CF354D = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -135,8 +189,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04D19EC0218A219000CF354D /* ViewController.swift in Sources */,
+				04C3B164218EE01C0035DCD5 /* SideMenuViewController.swift in Sources */,
+				04C3B167218EE0910035DCD5 /* SideMenuCell.swift in Sources */,
 				04D19EBE218A219000CF354D /* AppDelegate.swift in Sources */,
+				04D19ED3218A25B200CF354D /* SWRevealViewController.m in Sources */,
+				04D19ED9218A300600CF354D /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +339,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MyFirstAPP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -290,6 +348,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.shailendra.MyFirstAPP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MyFirstAPP/SWReveal/MyFirstAPP-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -299,6 +359,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MyFirstAPP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -307,6 +368,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.shailendra.MyFirstAPP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MyFirstAPP/SWReveal/MyFirstAPP-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
